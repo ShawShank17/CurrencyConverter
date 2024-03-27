@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="converterstyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="mainarea">
+        <p id="heading">
+            Currency-Converter
+        </p>
+        <div id="mainbottom">
+            <p id="enteramount">Enter Amount</p>
+            <input id="fromvalue" type="number" placeholder="Enter Value" min="0" max="2147483648">
+        </div>
+        <div id="maintop">
+            <div id="dropdown">
+                <form>
+                    <label id="fromlabel">
+                        From:
+                    </label>
+                    <img src="https://flagsapi.com/IN/flat/64.png" id="fromflag">
+                    <select id="fromlist">
+                        <option value="POUND">U K POUND</option>
+                        <option value="USD">US DOLLAR</option>
+                        <option value="INR">INDIAN NATIONAL RUPEE</option>
+                        <option value="DIRHAM">DIRHAM</option>
+                    </select>
+                </form>
+            </div>
+            <div id="dropdown">
+                <form>
+                    <label id="tolabel">
+                        To:
+                    </label>
+                    <img src="https://flagsapi.com/US/flat/64.png" id="toflag">
+                    <select id="tolist">
+                        <option value="POUND">U K POUND</option>
+                        <option value="USD">US DOLLAR</option>
+                        <option value="INR">INDIAN NATIONAL RUPEE</option>
+                        <option value="DIRHAM">DIRHAM</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <button id="submit">SUBMIT</button>
+        <div class="msg">1USD = 80INR</div>
+    </div>
+    <script src="converterinner.js"></script>
+    <script src="codes.js"></script>
+</body>
+</html>
